@@ -1,10 +1,11 @@
 import './footer.css'
 import { FaInstagram } from "react-icons/fa";
+import logoImg from '../images/logoBTCChicho.png'
 
 function Footer() {
   return (
     <div className="footer-container">
-       <img src="./src/images/logoBTCChicho.png" alt="Logo" />
+       <img src={ logoImg } alt="Logo" />
         <p>© 2024 Black Training Center. Todos los derechos reservados.</p>
         <div className='redes'>
             <FaInstagram />

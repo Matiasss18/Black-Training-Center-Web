@@ -1,4 +1,5 @@
 import './header.css'
+import logoImg from '../images/logoBTCChicho.png'
 
 function Header({  onAsociateClick, onInicioClick, onAboutUsClick }) {
 
@@ -6,7 +7,7 @@ function Header({  onAsociateClick, onInicioClick, onAboutUsClick }) {
     <>
       <div className='header'>
         <a href="/" onClick={(e) => { e.preventDefault(); onInicioClick(); }}>
-          <img src="./src/images/logoBTCChicho.png" alt="Logo" className='logoBTC' />
+          <img src={logoImg} alt="Logo" className='logoBTC' />
         </a>
         <ul className='navBar'>
           <li onClick={ onInicioClick }>Inicio</li>

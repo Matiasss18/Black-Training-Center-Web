@@ -1,6 +1,7 @@
 import './form.css'
 import emailjs from '@emailjs/browser';
 import { useState } from 'react'
+import comunidadImg from '../images/asociacion.jpg'
 
 function Form({ asociateRef }) {
 
@@ -44,7 +45,7 @@ function Form({ asociateRef }) {
     <div className='main' ref={ asociateRef }>
         <h1 className='title'>Asociate a Black Training Center</h1>
         <div className='form-container'>
-            <img src="./src/images/asociacion.jpg" alt="" />
+            <img src={comunidadImg} alt="Asociación" />
             <div className='formulario' onSubmit={ handleSubmit }>
                 <h2>Ingresá tus datos</h2>
                 <form className='contenidoFormulario'>

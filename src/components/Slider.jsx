@@ -1,21 +1,26 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Importamos los módulos desde la ruta correcta para Vite/Swiper 11
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import slide1 from '../images/slide1.jpg';
+import slide2  from '../images/slide2.jpg';
+import slide3  from '../images/slide3.jpg';
+import slide4  from '../images/slide4.jpg';
+import slide5  from '../images/slide5.jpg';
+import slide6  from '../images/slide6.jpg';
+import slide7  from '../images/slide7.jpg';
 
-// Estilos obligatorios de Swiper
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './slider.css';
 
 const slidesData = [
-    { image: './src/images/slide1.jpg', title: 'Entrenamiento 1' },
-    { image: './src/images/slide2.jpg', title: 'Entrenamiento 2' },
-    { image: './src/images/slide3.jpg', title: 'Entrenamiento 3' },
-    { image: './src/images/slide4.jpg', title: 'Entrenamiento 4' },
-    { image: './src/images/slide5.jpg', title: 'Entrenamiento 5' },
-    { image: './src/images/slide6.jpg', title: 'Entrenamiento 6' },
-    { image: './src/images/slide7.jpg', title: 'Entrenamiento 7' }
+    { image: slide1, title: 'Entrenamiento 1' },
+    { image: slide2, title: 'Entrenamiento 2' },
+    { image: slide3, title: 'Entrenamiento 3' },
+    { image: slide4, title: 'Entrenamiento 4' },
+    { image: slide5, title: 'Entrenamiento 5' },
+    { image: slide6, title: 'Entrenamiento 6' },
+    { image: slide7, title: 'Entrenamiento 7' }
 ];
 
 function Slider() {
