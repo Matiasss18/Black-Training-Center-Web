@@ -5,6 +5,7 @@
   width: 100%;
   min-height: 600px;
   padding: 40px 0;
+  height: 100vh;
 }
 
 .swiperContainer {

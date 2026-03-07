@@ -1,8 +1,17 @@
 import './boutUs.css'
 import { FaDumbbell, FaHeartbeat, FaUsers } from 'react-icons/fa';
 import { GiMuscleUp } from 'react-icons/gi';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function BoutUs( { aboutUsRef } ) {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
 
     const items = [
     {
@@ -31,8 +40,8 @@ function BoutUs( { aboutUsRef } ) {
   return (
     <div className="boutUs" ref={ aboutUsRef }>
         <div className="mainContainer">
-            <h1>¿Quiénes somos?</h1>
-            <div className='contenedor'>
+            <h1 data-aos="fade-right">¿Quiénes somos?</h1>
+            <div className='contenedor' data-aos="fade-left">
                 <p>Somos un equipo de profesionales apasionados y certificados, dedicados a brindar una educación de calidad en el área del entrenamiento físico. Nuestro objetivo no es solo ayudarte a alcanzar tus metas estéticas, sino transformar tu estilo de vida a través de una planificación seria, técnica y personalizada para cada nivel.</p>
                 <div className='iconos-grid'>
                     {items.map((item) => (

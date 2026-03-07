@@ -1,9 +1,17 @@
 import './form.css'
 import emailjs from '@emailjs/browser';
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import comunidadImg from '../images/asociacion.jpg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Form({ asociateRef }) {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 2000,
+        });
+    }, []);
 
     const [datos, setDatos] = useState({
         nombre: '',
@@ -42,7 +50,7 @@ function Form({ asociateRef }) {
     }
 
   return (
-    <div className='main' ref={ asociateRef }>
+    <div className='main' ref={ asociateRef } data-aos="fade-up">
         <h1 className='title'>Asociate a Black Training Center</h1>
         <div className='form-container'>
             <img src={comunidadImg} alt="Asociación" />

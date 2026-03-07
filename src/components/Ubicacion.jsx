@@ -1,11 +1,21 @@
 import './ubicacion.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react'
 
 function Ubicacion() {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 2000,
+        });
+    }, []);
+
   return (
     <div className="ubicacion-container">
         <h2>Ubicación e Información Extra</h2>
         <div className="map-container">
-            <div className='info'>
+            <div className='info' data-aos="flip-right">
                 <p><strong>Dirección:</strong> Av. Escalada 4320, Ciudad Autónoma de Buenos Aires</p>
                 <p><strong>Teléfono:</strong> +54 11 3943-2242</p>
                 <p><strong>Email:</strong> info@blacktrainingcenter.com</p>
@@ -19,6 +29,7 @@ function Ubicacion() {
                 allowFullScreen="" 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
+                data-aos="flip-left"
             ></iframe>
         </div>
     </div>
