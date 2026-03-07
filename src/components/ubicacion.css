@@ -1,0 +1,61 @@
+.ubicacion-container {
+  padding: 40px 20px;
+  background-color: #000000;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ubicacion-container h2 {
+  color: #ACE102;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.info {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 30px;
+  display: flex ;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 20px
+  ;
+}
+
+@media (max-width: 768px) {
+  .ubicacion-container {
+    height: auto; /* Permite que el contenido crezca si es necesario */
+    padding: 60px 15px;
+  }
+
+  .map-container {
+    flex-direction: column; /* Apila la info y el mapa verticalmente */
+    gap: 30px;
+    margin: 10px auto;
+  }
+
+  .info {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  /* Ajustamos el iframe para que ocupe todo el ancho y sea menos alto */
+  .map-container iframe {
+    width: 100% !important; 
+    height: 350px !important;
+  }
+}
