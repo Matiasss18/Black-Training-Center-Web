@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { SlArrowDown } from "react-icons/sl";
 import slide1 from '../images/slide1.jpg';
 import slide2  from '../images/slide2.jpg';
 import slide3  from '../images/slide3.jpg';
@@ -51,6 +52,9 @@ function Slider() {
                         </SwiperSlide>
                     ))}
                 </Swiper>
+            </div>
+            <div className='arrowDown'>
+                <SlArrowDown />
             </div>
         </div>
     );
